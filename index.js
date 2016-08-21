@@ -1,7 +1,7 @@
 var natives = process.binding('natives')
 var module = require('module')
 var normalRequire = require
-exports.src = src
+exports.source = src
 exports.require = req
 var vm = require('vm')
 
