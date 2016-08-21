@@ -42,7 +42,7 @@ Isaac Z. Schlueter
 var natives = require('natives')
 
 // get the source code
-var fsCode = natives.source('fs')
+var fsCode = natives.src('fs')
 
 // get a evaluated copy of the module
 var fsCopy = natives.require('fs')
