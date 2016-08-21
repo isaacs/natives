@@ -6,8 +6,8 @@ Do stuff with Node.js's native JavaScript modules
 
 Dear Beloved User,
 
-I feel compelled to give you a personalized word of warning if you are
-considering using this module.
+I feel compelled to give you a word of warning if you are considering
+using this module.
 
 This module lets you do some creative things with the JavaScript code
 in Node.js.  There are some things here that are basically a recipe
