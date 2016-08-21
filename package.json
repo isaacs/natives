@@ -1,6 +1,6 @@
 {
   "name": "natives",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Do stuff with Node.js's native JavaScript modules",
   "main": "index.js",
   "scripts": {
