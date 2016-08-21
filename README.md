@@ -15,18 +15,16 @@ for memory leaks, or at the very least, being broken with each new
 release of Node, since none of these API surfaces are "technically"
 "supported" by the team managing the Node.js project.
 
-This module is not a _copy_ of Node's internals.  It does what it does
-by using the exposed source code that lives in Node.js itself.  So,
-running this on different versions of Node.js will produce different
-results.  Like I said above, it'll almost certainly break with each
-major version release of Node (or even potentially patch/minor
-versions).
+This module does not ship a _copy_ of Node's internals.  It does its
+thing by using the exposed source code that lives in Node.js itself.
+So, running this on different versions of Node.js will produce
+different results.
 
 When your program is broken by changes to Node's internals, or when
 Node changes in such a way that this module becomes fundamentally
-broken, you will likely get no sympathy from the Node core team.  Many
-people in the Node community consider this sort of behavior to be
-unwise and unseemly, if not outright hostile and morally wrong.
+broken, you will likely get little sympathy.  Many people in the Node
+community consider this sort of behavior to be unwise and unseemly, if
+not outright hostile and morally wrong.
 
 At the very least, you probably just want to run Node with the
 (undocumented!) `--expose-internals` flag, rather than go to such
