@@ -41,6 +41,19 @@ function req_ (id, cache) {
     return require('buffer')
   }
 
+  // native_module isn't actually a natives binding.
+  // weird, right?
+  if (id === 'native_module') {
+    return {
+      getSource: src,
+      wrap: function (script) {
+        return wrap[0] + script + wrap[1]
+      },
+      wrapper: wrap,
+      _cache: cache
+    }
+  }
+
   var source = src(id)
   if (!source) {
     return undefined

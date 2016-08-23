@@ -29,6 +29,18 @@ t.test('it doesnt break buffers and streams', function (t) {
   })
 })
 
+t.test('it can load native_module and module', function (t) {
+  // this will throw otherwise!
+  natives.require('module')
+
+  var nm = natives.require('native_module')
+  t.match(nm.wrapper, [ String, String ])
+  t.equal(nm.wrap('foo'), nm.wrapper.join('foo'))
+  t.isa(nm._cache, 'object')
+  t.equal(nm.getSource, natives.source)
+  t.end()
+})
+
 t.test('fs is like fs but not fs', function (t) {
   var fs = require('fs')
   var nfs = natives.require('fs')

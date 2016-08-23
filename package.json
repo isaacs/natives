@@ -4,7 +4,7 @@
   "description": "Do stuff with Node.js's native JavaScript modules",
   "main": "index.js",
   "scripts": {
-    "test": "tap test/*.js --branches=100"
+    "test": "tap test/*.js --branches=100 --lines=100 --statements=100 --functions=100"
   },
   "repository": {
     "type": "git",
