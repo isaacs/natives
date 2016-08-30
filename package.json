@@ -4,7 +4,7 @@
   "description": "Do stuff with Node.js's native JavaScript modules",
   "main": "index.js",
   "scripts": {
-    "test": "tap test/*.js --branches=100 --lines=100 --statements=100 --functions=100"
+    "test": "tap test/*.js --100"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/isaacs/natives#readme",
   "devDependencies": {
-    "tap": "^6.3.2"
+    "tap": "^7.0.0"
   },
   "files": [
     "index.js"
