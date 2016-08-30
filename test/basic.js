@@ -55,3 +55,9 @@ t.test('handle not-found modules with grace', function (t) {
   t.equal(natives.require('./not-a-node-internal/.'), undefined)
   t.end()
 })
+
+t.test('support a whitelist', function (t) {
+  var fs = natives.require('fs', [ 'stream' ])
+  t.isa(fs.ReadStream.prototype, require('stream').Readable)
+  t.end()
+})
