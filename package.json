@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/isaacs/natives#readme",
   "devDependencies": {
-    "tap": "^7.0.0"
+    "tap": "^11.0.0"
   },
   "files": [
     "index.js"
